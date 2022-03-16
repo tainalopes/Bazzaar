@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
 import Header from './src/Components/Header';
 import Produto from './src/Components/Produto';
@@ -73,4 +73,18 @@ const estilo = StyleSheet.create({
   footer: {
     flexDirection: 'row', flex: 1, alignItems: 'center', justifyContent: 'space-around', padding: 10
   }
-})
+}) */
+
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import TabNavigator from "./src/Navigators/TabNavigator";
+
+export default function App() {
+  return(
+
+    <NavigationContainer>
+      <TabNavigator></TabNavigator>
+    </NavigationContainer>
+
+  )
+}

@@ -26,4 +26,16 @@ Projeto com Icons:
 -> npm install --save react-native-vector-icons
 -> react-native link 
 
-teste
+----------------------------------------------------------------------
+adicionar um projeto no github
+-> git init (na pasta do projeto)
+-> git status
+-> git add .
+-> git commit -m "descrição"
+-> criar a pasta lá no github, depois copiar os 3 comandos de remote, branch e push
+
+para seguir comitando:
+-> git status
+-> git add .
+-> git commit -m "descrição"
+-> git push
