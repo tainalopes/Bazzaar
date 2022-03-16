@@ -25,3 +25,5 @@ Projeto com telas (navigation):
 Projeto com Icons:
 -> npm install --save react-native-vector-icons
 -> react-native link 
+
+teste
