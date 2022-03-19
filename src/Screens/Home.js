@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Text, ScrollView, StyleSheet, View, TouchableOpacity, Image, ImageBackground } from "react-native";
+import { Text, ScrollView, StyleSheet, View, TouchableOpacity, Image, ImageBackground, Button } from "react-native";
 
-export default function Home() {
+export default function Home({navigation}) {
     return (
         <ScrollView style={{ backgroundColor: 'white' }}>
 
@@ -10,6 +10,21 @@ export default function Home() {
             </View>
 
             <Image style={estilo.imagem} source={require('../Images/alldresses.jpg')} />
+
+            <View style={estilo.categorias}>
+                <Image style={estilo.icons} source={require('../Images/iconCurto.png')} />
+                <Text style={estilo.subtitulos}>vestidos curtos</Text>
+            </View>
+
+            <Button title="ir para vc" onPress={() => navigation.navigate('Vestidos Curtos')}></Button>
+
+            <View style={estilo.categorias}>
+                <Image style={estilo.icons} source={require('../Images/iconLongo.png')} />
+                <Text style={estilo.subtitulos}>vestidos longos</Text>
+            </View>
+
+            <Button title="ir para vl" onPress={() => navigation.navigate('Vestidos Longos')}></Button>
+
 
         </ScrollView>
     )

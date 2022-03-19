@@ -1,13 +1,14 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import Home from '../Screens/Home.js';
 import Categorias from '../Screens/Categorias.js';
 import Cartoes from '../Screens/Cartoes.js';
 import Sobre from '../Screens/Sobre.js';
-import VestidosCurtos from '../Components/VestidosCurtos.js';
-import VestidosLongos from '../Components/VestidosLongos.js';
+import StackNavigator from './StackNavigator.js';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -46,15 +47,11 @@ export default function TabNavigator(){
 
             navigationOptions = {({ navigation}) => ({
                 tabBarLabel: 'yellow'
-            })}
+            })} 
         >
-
-            <Tab.Screen component={Home} name='Home'/>
-            <Tab.Screen component={Categorias} name='Categorias'/>
+            <Tab.Screen component={StackNavigator} name='Home' options={{headerShown: false}}/>
             <Tab.Screen component={Cartoes} name='Cartões'/>
             <Tab.Screen component={Sobre} name='Sobre'/>
-            <Tab.Screen component={VestidosCurtos} name='VC'/>
-            <Tab.Screen component={VestidosLongos} name='VL'/>
         </Tab.Navigator>
     )
 }

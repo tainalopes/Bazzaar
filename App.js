@@ -75,6 +75,7 @@ const estilo = StyleSheet.create({
   }
 }) */
 
+import 'react-native-gesture-handler';
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import TabNavigator from './src/Navigators/TabNavigator';
@@ -84,7 +85,7 @@ export default function App() {
 
     <NavigationContainer>
 
-      <TabNavigator></TabNavigator>
+      <TabNavigator />
 
     </NavigationContainer>
 
