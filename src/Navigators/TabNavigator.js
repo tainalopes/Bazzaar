@@ -3,8 +3,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import Home from '../Screens/Home.js';
-import Categorias from '../Screens/Categorias.js';
 import Cartoes from '../Screens/Cartoes.js';
 import Sobre from '../Screens/Sobre.js';
 import StackNavigator from './StackNavigator.js';

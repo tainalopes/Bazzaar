@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
-import { Text, ScrollView, StyleSheet, View, TouchableOpacity, Image, ImageBackground } from "react-native";
+import { Text, ScrollView, StyleSheet, View } from "react-native";
 import Produto from '../Components/Produto';
 
 const vestidoL01 = require('../Images/vestido01.png');
 const vestidoL02 = require('../Images/vestido02.png');
 const vestidoL03 = require('../Images/vestido04.png');
-const vestidoC01 = require('../Images/vestido03.png');
-const vestidoC02 = require('../Images/vestido05.png');
-const vestidoC03 = require('../Images/vestido06.png');
 
 export default function Home() {
     return (
         <ScrollView style={{backgroundColor: 'white'}}>
-
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 7 }}>
-                <Image style={estilo.icons} source={require('../Images/iconLongo.png')} />
-                <Text style={estilo.subtitulos}>vestidos longos</Text>
-            </View>
 
             <View style={estilo.imagemVestido}>
                 <Produto nome="vestido manga" preco="R$ 70,00" imagem={vestidoL01} />
                 <Produto nome="vestido alça" preco="R$ 80,00" imagem={vestidoL02} />
                 <Produto nome="vestido babados" preco="R$ 90,00" imagem={vestidoL03} />
             </View>
+
+            <Text style={estilo.embreve}>*em breve mais itens ;)</Text>
+
         </ScrollView>
     )
 }
@@ -48,5 +43,10 @@ const estilo = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    embreve: {
+        fontSize: 12,
+        fontFamily: 'monospace',
+        padding: 10
     }
 })

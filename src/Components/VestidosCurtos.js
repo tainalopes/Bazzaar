@@ -10,16 +10,13 @@ export default function VestidosCurtos() {
     return (
         <ScrollView style={{backgroundColor: 'white'}}>
 
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 7 }}>
-                <Image style={estilo.icons} source={require('../Images/iconCurto.png')} />
-                <Text style={estilo.subtitulos}>vestidos curtos</Text>
-            </View>
-
             <View style={estilo.imagemVestido}>
                 <Produto nome="vestido camiseta" preco="R$ 70,00" imagem={vestidoC01} />
                 <Produto nome="vestido alça" preco="R$ 80,00" imagem={vestidoC02} />
                 <Produto nome="vestido manga" preco="R$ 90,00" imagem={vestidoC03} />
             </View>
+
+            <Text style={estilo.embreve}>*em breve mais itens ;)</Text>
 
         </ScrollView>
     )
@@ -46,5 +43,10 @@ const estilo = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    embreve: {
+        fontSize: 12,
+        fontFamily: 'monospace',
+        padding: 10
     }
 })
