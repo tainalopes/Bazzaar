@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-export default function Cartoes(){
+export default function Pagamento(){
     return(
         <View style={estilo.redes}>
+
             <Text style={estilo.subtitulo}>formas de pagamento</Text>
             <Image source={require('../Images/pagamento.png')} />
+
         </View>
     )
 }

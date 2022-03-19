@@ -8,7 +8,7 @@ const vestidoL03 = require('../Images/vestido04.png');
 
 export default function Home() {
     return (
-        <ScrollView style={{backgroundColor: 'white'}}>
+        <ScrollView style={{ backgroundColor: 'white' }}>
 
             <View style={estilo.imagemVestido}>
                 <Produto nome="vestido manga" preco="R$ 70,00" imagem={vestidoL01} />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, ScrollView, StyleSheet, View, Image } from "react-native";
+import { Text, ScrollView, StyleSheet, View } from "react-native";
 import Produto from '../Components/Produto';
 
 const vestidoC01 = require('../Images/vestido03.png');
@@ -8,7 +8,7 @@ const vestidoC03 = require('../Images/vestido06.png');
 
 export default function VestidosCurtos() {
     return (
-        <ScrollView style={{backgroundColor: 'white'}}>
+        <ScrollView style={{ backgroundColor: 'white' }}>
 
             <View style={estilo.imagemVestido}>
                 <Produto nome="vestido camiseta" preco="R$ 70,00" imagem={vestidoC01} />

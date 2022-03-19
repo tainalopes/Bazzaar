@@ -6,7 +6,7 @@ export default function Sobre() {
         <View style={estilo.redes}>
             <ScrollView>
 
-                <Image style={{ width: 350, height: 120, alignSelf: 'center' }} source={require('../Images/sobre.jpg')} />
+                <Image style={estilo.imagem1} source={require('../Images/sobre.jpg')} />
 
                 <Text style={estilo.titulo}>Sobre o Bazar</Text>
                 <Text style={estilo.descricao}>
@@ -16,7 +16,7 @@ export default function Sobre() {
                 <Text style={estilo.linha}></Text>
 
                 <Text style={estilo.subtitulo}>onde nos encontrar</Text>
-                <Image style={estilo.imagem} source={require('../Images/redes.png')} />
+                <Image style={estilo.imagem2} source={require('../Images/redes.png')} />
             </ScrollView>
         </View>
     )
@@ -56,7 +56,12 @@ const estilo = StyleSheet.create({
         marginTop: 20,
         alignSelf: 'center'
     },
-    imagem: {
+    imagem1: {
+        width: 350, 
+        height: 120, 
+        alignSelf: 'center'
+    },
+    imagem2: {
         width: 150,
         height: 70,
         alignSelf: 'center'

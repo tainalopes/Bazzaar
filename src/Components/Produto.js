@@ -91,7 +91,6 @@ const estilo = StyleSheet.create({
         alignSelf: 'center',
         fontFamily: 'monospace',
         padding: 4,
-
     },
     imagemVestido: {
         alignSelf: 'center',
@@ -101,7 +100,6 @@ const estilo = StyleSheet.create({
         height: 150,
         marginBottom: 10,
         borderRadius: 5
-
     },
     descricao: {
         textAlign: 'center',

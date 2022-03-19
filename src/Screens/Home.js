@@ -13,15 +13,15 @@ export default function Home({ navigation }) {
 
             <Text style={estilo.subtitulo}>o que você procura?</Text>
 
-            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
 
-            <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Vestidos Curtos')}>
-                <Text style={estilo.textoBotao}>vestidos curtos</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Vestidos Curtos')}>
+                    <Text style={estilo.textoBotao}>vestidos curtos</Text>
+                </TouchableOpacity>
 
-            <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Vestidos Longos')}>
-                <Text style={estilo.textoBotao}>vestidos longos</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Vestidos Longos')} on>
+                    <Text style={estilo.textoBotao}>vestidos longos</Text>
+                </TouchableOpacity>
 
             </View>
 
@@ -54,17 +54,17 @@ const estilo = StyleSheet.create({
         margin: 10
     },
     botao: {
-        backgroundColor: 'black', 
+        backgroundColor: 'black',
         width: 150,
         height: 40,
         borderRadius: 5,
         justifyContent: 'center'
-    }, 
+    },
     textoBotao: {
-        color: 'white', 
-        textAlign: 'center', 
-        alignSelf: 'center', 
-        fontSize: 14, 
+        color: 'white',
+        textAlign: 'center',
+        alignSelf: 'center',
+        fontSize: 14,
         fontFamily: 'monospace',
         fontWeight: 'bold'
     }
