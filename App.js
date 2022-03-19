@@ -77,13 +77,15 @@ const estilo = StyleSheet.create({
 
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import TabNavigator from "./src/Navigators/TabNavigator";
+import TabNavigator from './src/Navigators/TabNavigator';
 
 export default function App() {
   return(
 
     <NavigationContainer>
+
       <TabNavigator></TabNavigator>
+
     </NavigationContainer>
 
   )
